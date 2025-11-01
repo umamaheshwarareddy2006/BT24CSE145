@@ -1,0 +1,11 @@
+#!/bin/bash
+read -p "Enter a number: " n
+fact=1
+i=$n
+
+while (( i > 1 )); do
+    fact=$((fact * i))
+    ((i--))
+done
+
+echo "Factorial: $fact"
